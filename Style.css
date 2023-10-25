@@ -1,0 +1,103 @@
+body {
+    background-color: rgb(174, 174, 174);
+    display: flex;  
+    background-image:url(svg/wp7703058-live-rgb-wallpapers.jpg);
+    background-repeat:no-repeat; 
+    background-size: cover;
+}
+#football {
+    
+    margin:20vh auto;
+    background-color: rgb(217, 0, 255);
+    box-shadow: 5px 2px 2px 5px rgb(0, 234, 255),0px 5px 20px 0px rgb(0, 255, 119) ;
+    width: 600px;
+    height: 420px;
+    border-radius: 8px;
+    position: relative;
+    
+}
+#football > img {
+    width: 600px;
+}
+i>img {
+    width: 50px;
+    animation: shoes 1s linear;
+    z-index: 10;
+    position: absolute;
+    top:200px;
+    left:460px;
+   
+    
+}
+/* just this is  */
+@keyframes shoes {
+    0% {
+        transform: translatex(0) translatey() translatez(0) ;
+    }
+    50% {
+        transform:  translatex(10vh) translatey(0)  ;
+        
+    }
+    100% {
+        transform: translatex(0) translatey(0) ;
+        
+    }
+}
+/* end */
+
+.parentball {
+
+    width:25px;
+    position: absolute;
+    top:80px;
+    left:45px;
+    /* background-color: rgb(254, 254, 255); */
+    background-color: white;
+    border-radius: 20px;
+    animation: shotball 5s linear ;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@keyframes shotball {
+    0% {
+        transform: translatex(0) translatey(0) rotate(360deg);
+    }
+    10% {
+        transform:  translatex(45px) translatey(0) rotate(360deg) ;
+    }
+    20% {
+        transform: translatex(150px) translatey(250px) ;
+        
+        
+    }
+    30% {
+        transform: translatex(200px) translatey(80px) rotate(360deg) ;
+        
+    }
+    40% {
+        transform: translatex(250px) translatey(250px) ;
+    }
+    50% {
+        transform: translatex(300px) translatey(150px) rotate(360deg) ;
+    }
+    60% {
+        transform: translatex(350px) translatey(250px) ;
+    }
+    71% {
+        transform: translatex(400px) translatey(200px) rotate(360deg) ;
+    }
+    80% {
+        transform: translatex(450px) translatey(250px) ;
+    }
+    90% {
+        transform: translatex(500px) translatey(220px) rotate(360deg);
+    }
+    
+    100% {
+        transform: translatex(550px) translatey(250px) ;
+        display: none;
+    }
+}
